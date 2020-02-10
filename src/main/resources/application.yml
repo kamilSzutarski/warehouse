@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/warehouse?useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Europe/Warsaw&autoReconnect=true
+    username: root
+    password: rootroot
+  jpa:
+    hibernate:
+      ddl-auto: update #jesli bedzie nowa tabelka to bedzie stworzona w schemacie bazy danych, to samo z kolumna itp
+      #jak usune walidacje na polu lub kolumnie lub usune kolumne to nie usunie sie z schematu bazy.
